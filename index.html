@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<link rel="stylesheet" href="styl.css">
+			<title>REGISTER</title>
+		</head>
+		<body>
+		    <h1 id="title">Register</h1>
+			<div id="form-outer">
+				<form id="survey-form" method="GET" action="">
+					<div class="rowTab">
+						<div class="labels">
+							<label id="name-label" for="name">Name: </label>
+						</div>
+						<div class="rightTab">
+						   <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label for="address">Address: </label>
+						</div>
+					    <div class="rightTab">
+							<textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Address"></textarea>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label for="pincode">Pincode: </label>
+						</div>
+						<div class="rightTab">
+							<input type="number" name="pincode" id="idpincode" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -">
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label id="email-label" for="email">Email: </label>
+						</div>
+						<div class="rightTab">
+							<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label id="number-label" for="age">Age: </label>
+						</div>
+					    <div class="rightTab">
+						    <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" required>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label id="dob-label" for="dob">D.O.B: </label>
+						</div>
+						<div class="rightTab">
+							<input type="date" name="dob" id="iddob" class="input-field" required>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label for="department">Course: </label>
+						</div>
+						<div class="rightTab">
+							<select id="dropdown" name="department" class="dropdown">
+								<option disabled value>Select an option</option>
+								<option value="Course">Course</option>
+								<option value="BCA">BCA</option>
+								<option value="Bsc">BCA</option>
+								<option value="BBA">BBA</option>
+								<option value="B.Tech">B.Tech</option>
+							</select>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label for="gender">Gender: </label>
+						</div>
+						<div class="rightTab">
+							<ul style="list-style: none;">
+								<li class="radio">
+								  <label>
+									<input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male
+								  </label>
+								</li>
+							    <li class="radio">
+									<label>
+										<input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female
+									</label>
+								</li>
+								<li class="radio">
+									<label>
+										<input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label id="name-label" for="name">Username: </label>
+						</div>
+						<div class="rightTab">
+						    <input autofocus type="text" name="uname" id="name" class="input-field" placeholder="Username" >
+						</div>
+					</div>
+					<div class="rowTab">
+						<div class="labels">
+							<label id="name-label" for="name">Password: </label>
+						</div>
+						<div class="rightTab">
+						    <input autofocus type="password" name="pwd" id="name" class="input-field" placeholder="Password" >
+						</div>
+					</div>
+					<input type="submit" name="submit" value="Submit" id="submit">
+					<input type="reset" name="reset" value="Reset" id="reset">  
+			    </form>
+			</div>
+	</body>
+</html>
